@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#C9A84C">
+  <meta name="description"
+    content="Shivdhenu — Pure natural masalas, ragi malt and roasted makhana snacks. Rooted in Vedic tradition and Gou Seva, crafted with love.">
+  <title>Shivdhenu</title>
+  <link rel="icon" href="assets/back_logo.png">
+  <link rel="apple-touch-icon" href="assets/back_logo.png">
+  <link rel="manifest" href="assets/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAV injected by JS -->
+  <div id="nav-root"></div>
+
+  <!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="assets/back_logo.png" alt="Shivdhenu" class="hero-logo">
+
+      <div class="hero-badge">
+        <span class="hero-dot"></span>
+        PURE · NATURAL · AUTHENTIC
+        <span class="hero-dot"></span>
+      </div>
+
+      <h1 class="hero-title">
+        Authentic Masalas, Pure Ragi<br><span class="gold">& Roasted Makhana Snacks</span>
+      </h1>
+      <!-- <p class="hero-sub">माँ का आशीर्वाद, प्रकृति का प्रसाद</p> -->
+
+      <p class="hero-desc">
+        Crafted with tradition, purity and devotion.
+        Shivdhenu brings naturally prepared foods made with authentic ingredients and timeless Indian wisdom.
+      </p>
+
+      <div class="hero-btns">
+        <a href="pages/products.html" class="btn btn-gold">🌿 Explore Products</a>
+        <a href="pages/story.html" class="btn btn-outline">Our Story →</a>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats">
+        <div class="h-stat">
+          <span class="h-sn" data-count="100">0</span>
+          <span class="h-sl">% Natural</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-sn" data-count="0">0</span>
+          <span class="h-sl">Preservatives</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-sn" data-count="2">0</span>
+          <span class="h-sl">% Gou Seva</span>
+        </div>
+        <div class="h-stat">
+          <span class="h-sn">❤️</span>
+          <span class="h-sl">Made with Love</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- Gou Seva banner -->
+  <div id="gou-root"></div>
+
+  <!-- ═══════════════════════════════════════════
+     WHY CHOOSE US (6 cards)
+═══════════════════════════════════════════ -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="overline">The Shivdhenu Difference</span>
+        <h2>Why Families <span class="gold">Trust Us</span></h2>
+        <div class="divider"></div>
+        <p>Every product we make carries a promise — pure ingredients, ancient methods, and zero compromise.</p>
+      </div>
+
+      <div class="feat-grid">
+        <div class="feat-card reveal">
+          <div class="feat-ico">🌿</div>
+          <h4>ZERO PRESERVATIVES</h4>
+          <p>Nothing artificial, ever. Our products contain only real ingredients from nature.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.1s">
+          <div class="feat-ico">🕉️</div>
+          <h4>VEDIC METHODS</h4>
+          <p>Ancient recipes passed down through generations — not factory formulas.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.2s">
+          <div class="feat-ico">🐄</div>
+          <h4>GOU SEVA COMMITTED</h4>
+          <p>2% of every sale goes directly to care for indigenous Gir cows.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.3s">
+          <div class="feat-ico">🌾</div>
+          <h4>FARM SOURCED</h4>
+          <p>Directly sourced from trusted farmers — no middlemen, no mystery.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.4s">
+          <div class="feat-ico"><span class="wa-svg-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
+              </svg>
+            </span></div>
+          <h4>PERSONAL SERVICE</h4>
+          <p>We are a startup that values every customer. Reach us directly on WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     PRODUCT CATEGORIES PREVIEW
+═══════════════════════════════════════════ -->
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="overline">What We Offer</span>
+        <h2>Our <span class="gold">Product Range</span></h2>
+        <div class="divider"></div>
+        <p>From your kitchen spices to your evening snack bowl — we've got nature's best for every part of your day.</p>
+      </div>
+
+      <!-- Category cards -->
+      <div class="cat-cards" id="cat-cards"></div>
+
+      <!-- Featured products (4 available) -->
+      <div class="prod-grid" id="featured-prods"></div>
+
+      <div class="text-center" style="margin-top:36px">
+        <a href="pages/products.html" class="btn btn-outline">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+     STORY TEASER-->
+  <style>
+    .story-teaser {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center
+    }
+
+    @media(max-width:768px) {
+      .story-teaser {
+        grid-template-columns: 1fr;
+        gap: 24px
+      }
+    }
+
+    @media(max-width:768px) {
+      .story-teaser img {
+        height: 220px !important
+      }
+    }
+  </style>
+
+  <!-- ═══════════════════════════════════════════
+     TESTIMONIALS SNIPPET
+═══════════════════════════════════════════ -->
+  <!-- ═══════════════════════════════════════════
+     CTA — CONTACT / WHATSAPP
+═══════════════════════════════════════════ -->
+  <section class="section-alt">
+    <div class="wrap text-center" style="max-width:640px;margin:0 auto">
+      <span class="overline">Get In Touch</span>
+      <h2 style="margin-bottom:14px">Connect With Us On <span class="gold">WhatsApp </span></h2>
+      <div class="divider"></div>
+      <p style="color:var(--text2);margin:20px auto 32px;font-size:.95rem">
+        Have questions about our products or availability? Reach out to us directly on whatsApp and our team will assist
+        you personally.
+      </p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a id="home-wa-btn" href="#" target="_blank" class="btn btn-wa" style="font-size:10px;padding:10px 20px"><span
+            class="wa-svg-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
+            </svg>
+          </span> Order on WhatsApp</a>
+      </div>
+      <!-- PWA Install button (shown only when installable) -->
+      <button id="pwa-install" class="btn btn-ghost" style="display:none;margin:20px auto 0;gap:8px">
+        Add to Home Screen
+      </button>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <!-- FOOTER injected by JS -->
+  <div id="footer-root"></div>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* WhatsApp button */
+      document.getElementById('home-wa-btn').href = waLink('Namaste! I would like to know more about Shivdhenu products.');
+
+      /* Category cards */
+      const catEl = document.getElementById('cat-cards');
+      if (catEl) {
+        catEl.innerHTML = CATEGORIES.filter(c => c.slug !== 'all').map(c => `
+      <a href="pages/products.html?cat=${c.slug}" class="cat-card">
+        <span class="cat-ico">${c.icon}</span>
+        <span class="cat-lbl">${c.label}</span>
+      </a>
+    `).join('');
+      }
+
+      /* Featured products — one from each category (Masala, Ragi, Makhana x2) for a balanced preview */
+      const featEl = document.getElementById('featured-prods');
+      if (featEl) {
+        const featuredIds = [2, 5, 6, 9]; // Chilli Powder, Ragi Malt, Peri Peri Makhana, Cheese Makhana
+        const featured = featuredIds.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
+        featEl.innerHTML = featured.map(prodCard).join('');
+        setTimeout(initReveal, 100);
+      }
+
+      /* Home testimonials — first 3 */
+      const testiEl = document.getElementById('home-testis');
+      if (testiEl) {
+        testiEl.innerHTML = TESTIMONIALS.slice(0, 3).map(testiCard).join('');
+        setTimeout(initReveal, 150);
+      }
+
+      setTimeout(initReveal, 200);
+    });
+  </script>
+</body>
+
+</html>

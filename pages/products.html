@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#C9A84C">
+  <meta name="description"
+    content="Shivdhenu Products — Pure masalas, ragi malt and roasted makhana snacks. Dehydrated fruits and kids products coming soon.">
+  <title>Products — Shivdhenu</title>
+  <link rel="icon" href="../assets/back_logo.png">
+  <link rel="manifest" href="../assets/manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="nav-root"></div>
+
+  <!-- Page Header -->
+  <div class="page-hero">
+    <span class="overline">What We Offer</span>
+    <h1>Our <span class="gold">Products</span></h1>
+    <div class="divider"></div>
+    <p>Pure, natural and honestly made. Browse our range and WhatsApp us to order.</p>
+  </div>
+
+  <!-- Gou Seva strip -->
+  <div id="gou-root"></div>
+
+  <!-- ═══ PRODUCTS ═══ -->
+  <section class="section">
+    <div class="wrap">
+
+      <!-- WhatsApp order note -->
+      <div class="info-card" style="display:none;margin-bottom:36px">
+        <!--<span class="info-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
+          </svg>
+        </span>
+        <div>
+          <p class="info-ttl">ORDER DIRECTLY FROM SHIVDHENU</p>
+          <p class="info-txt">Every order is personally handled — no middlemen, no automation. Tap the WhatsApp button
+            on any product and we'll confirm freshness, pricing and delivery with you directly.</p>
+        </div>-->
+        <a id="order-wa" href="#" target="_blank" class="btn btn-wa btn-sm"><span class="wa-svg-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
+            </svg>
+          </span> WhatsApp Us</a>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="cat-tabs" id="cat-tabs" style="margin-bottom:32px"></div>
+
+      <!-- Grid -->
+      <div class="prod-grid" id="prod-grid"></div>
+
+      <!-- Empty state -->
+      <div id="prod-empty" style="display:none;text-align:center;padding:60px 20px">
+        <div
+          style="width:64px;height:64px;margin:0 auto 18px;border:1px solid var(--bdr);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:28px;height:28px">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+        </div>
+        <h3 style="color:var(--text);margin-bottom:8px">No products found</h3>
+        <p style="color:var(--text3);margin-bottom:24px">Try a different category.</p>
+        <button class="btn btn-ghost btn-sm" onclick="resetFilter()">Show All Products</button>
+      </div>
+
+      <!-- Coming soon note -->
+      <div class="soon-card reveal">
+        <span class="soon-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+            <path
+              d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+          </svg>
+        </span>
+        <h4 style="color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:8px;font-family:'Cinzel',serif">
+          MORE PRODUCTS COMING SOON</h4>
+        <p style="color:var(--text2);font-size:.88rem;max-width:480px;margin:0 auto 18px">
+          We are a growing startup. New products are added regularly. Follow us or subscribe to get notified first.
+        </p>
+        <a id="notify-wa" href="#" target="_blank" class="btn btn-wa btn-sm"><span class="wa-svg-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a8 8 0 0 1-8 8H5l2-4a8 8 0 1 1 14-4Z" />
+            </svg>
+          </span> Notify Me on WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ WHY SHIVDHENU PRODUCTS ARE DIFFERENT ═══ -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="overline">The Shivdhenu Difference</span>
+        <h2>Why Shivdhenu Products Are <span class="gold">Different</span></h2>
+        <div class="divider"></div>
+        <p>Every jar and packet carries a discipline most modern food brands have quietly given up on.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat-card reveal">
+          <div class="feat-ico">📜</div>
+          <h4>TRADITIONAL RECIPES</h4>
+          <p>Recipes passed down through generations — not formulated in a lab, but perfected over decades in real
+            kitchens.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.08s">
+          <div class="feat-ico">🌿</div>
+          <h4>PURE INGREDIENTS</h4>
+          <p>Only real, natural ingredients go into a Shivdhenu product. Nothing hides behind a long ingredient list.
+          </p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.16s">
+          <div class="feat-ico">🚫</div>
+          <h4>NO ARTIFICIAL PRESERVATIVES</h4>
+          <p>No synthetic preservatives, colours or additives — ever. Food the way it was meant to be made.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.24s">
+          <div class="feat-ico">📦</div>
+          <h4>SMALL BATCH PREPARATION</h4>
+          <p>We prepare in small batches, not mass production lines, so every order leaves us fresh and carefully made.
+          </p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.32s">
+          <div class="feat-ico">🐄</div>
+          <h4>ROOTED IN GOU SEVA</h4>
+          <p>Our work begins with service to the sacred cow. 2% of every purchase supports the welfare of indigenous Gir
+            cows.</p>
+        </div>
+        <!--<div class="feat-card reveal" style="transition-delay:.40s">
+          <div class="feat-ico">🕉️</div>
+          <h4>INSPIRED BY VEDIC VALUES</h4>
+          <p>Purity, devotion and honest food — principles drawn from Vedic tradition, carried into every product we
+            make.</p>
+        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THE SHIVDHENU PROMISE ═══ 
+  <section class="section">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="overline">Our Commitment</span>
+        <h2>The Shivdhenu <span class="gold">Promise</span></h2>
+        <div class="divider"></div>
+        <p>Every Shivdhenu product is created with three commitments that never change.</p>
+      </div>
+      <div class="feat-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+        <div class="feat-card reveal">
+          <div class="feat-ico">💧</div>
+          <h4>PURITY OF INGREDIENTS</h4>
+          <p>Nothing artificial, nothing diluted. Just real ingredients, sourced and prepared honestly.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.1s">
+          <div class="feat-ico">🏺</div>
+          <h4>RESPECT FOR TRADITION</h4>
+          <p>Methods passed down through generations, honoured rather than replaced by shortcuts.</p>
+        </div>
+        <div class="feat-card reveal" style="transition-delay:.2s">
+          <div class="feat-ico">🐄</div>
+          <h4>SERVICE THROUGH GOU SEVA</h4>
+          <p>A living commitment to the shelter, care and protection of indigenous Gir cows.</p>
+        </div>
+      </div>
+
+      <div
+        style="max-width:660px;margin:44px auto 0;padding:28px;background:rgba(201,168,76,.07);border:1px solid var(--bdr);border-radius:10px;text-align:center"
+        class="reveal">
+        <p
+          style="font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--text);font-style:italic;line-height:1.7">
+          2% of every purchase supports the welfare and protection of indigenous Gir cows.<br>When you choose Shivdhenu,
+          you become part of that mission.
+        </p>
+        <span class="overline" style="margin-top:12px">— The Shivdhenu Promise</span>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Newsletter
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="nl-box">
+        <span class="overline" style="margin-bottom:10px">New Products Alert</span>
+        <h3>Be the First to Know</h3>
+        <p>Products marked "Coming Soon" will launch soon. Subscribe and get early access.</p>
+        <div class="nl-form">
+          <input type="email" id="nl-email" placeholder="Your email address">
+          <button onclick="submitNL()">NOTIFY ME</button>
+        </div>
+      </div>
+    </div>
+  </section>-->
+
+  <div id="footer-root"></div>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    let activeCat = 'all';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      /* WhatsApp links */
+      document.getElementById('order-wa').href = waLink();
+      document.getElementById('notify-wa').href = waLink('Hi! Please notify me when new Shivdhenu products launch.');
+
+      /* Category tabs */
+      const tabsEl = document.getElementById('cat-tabs');
+      tabsEl.innerHTML = CATEGORIES.map(c => `
+    <button onclick="setCat('${c.slug}',this)"
+      class="cat-tab ${c.slug === 'all' ? 'active-tab' : ''}"
+      data-slug="${c.slug}">
+      ${c.icon} ${c.label}
+    </button>
+  `).join('');
+
+      /* Check URL param */
+      const urlCat = new URLSearchParams(location.search).get('cat');
+      if (urlCat) {
+        activeCat = urlCat;
+        /* Highlight correct tab */
+        setTimeout(() => {
+          document.querySelectorAll('.cat-tab').forEach(btn => {
+            btn.classList.toggle('active-tab', btn.dataset.slug === urlCat);
+          });
+        }, 50);
+      }
+
+      renderProducts();
+    });
+
+    function setCat(slug, btn) {
+      activeCat = slug;
+      document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active-tab'));
+      btn.classList.add('active-tab');
+      renderProducts();
+    }
+
+    function resetFilter() {
+      activeCat = 'all';
+      document.querySelectorAll('.cat-tab').forEach(b => {
+        b.classList.toggle('active-tab', b.dataset.slug === 'all');
+      });
+      renderProducts();
+    }
+
+    function renderProducts() {
+      let list = PRODUCTS.filter(p => {
+        if (activeCat !== 'all' && p.category !== activeCat) return false;
+        return true;
+      });
+
+      const grid = document.getElementById('prod-grid');
+      const empty = document.getElementById('prod-empty');
+
+      if (list.length === 0) {
+        grid.innerHTML = '';
+        empty.style.display = 'block';
+      } else {
+        empty.style.display = 'none';
+        grid.innerHTML = list.map(prodCard).join('');
+        setTimeout(initReveal, 50);
+      }
+    }
+
+  </script>
+</body>
+
+</html>

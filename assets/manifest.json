@@ -1,0 +1,14 @@
+{
+  "name": "Shivdhenu",
+  "short_name": "Shivdhenu",
+  "description": "Pure A2 Dairy & Vedic Products",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0C0A08",
+  "theme_color": "#C9A84C",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "assets/back_logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/back_logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
